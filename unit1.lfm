@@ -1,0 +1,32 @@
+object Form1: TForm1
+  Left = 1811
+  Height = 240
+  Top = 60
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poDesktopCenter
+  LCLVersion = '1.6.0.4'
+  object OpenGLControl1: TOpenGLControl
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 320
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    AutoResizeViewport = True
+    OpenGLMajorVersion = 4
+    OpenGLMinorVersion = 5
+    OnPaint = OpenGLControl1Paint
+  end
+  object Timer1: TTimer
+    Interval = 16
+    OnTimer = Timer1Timer
+    left = 126
+    top = 25
+  end
+end
